@@ -1,0 +1,58 @@
+<div class="popup popup--order">
+  <div class="popup__container">
+    <div class="popup__wrapper">
+      <button class="popup__close" type="button" aria-label="Закрыть">
+        закрыть
+      </button>
+      <div class="popup__inner">
+        <div class="popup__offer">
+          <span class="popup__title">
+            Для того чтобы сделать заказ заполните обязательные поля
+          </span>
+          <div class="popup__text">
+            <p>
+              После полученной от вас информации, <br />
+              наш менеджер свяжется с вами в течении 10 мин, поможет рассчитать
+              заказ и провести оплату
+            </p>
+          </div>
+
+          <form class="popup__form form-submit">
+            <div class="form-send">
+              <input
+                class="form-send__input"
+                type="text"
+                placeholder="Ваше имя"
+                required
+              />
+              <input
+                class="form-send__input"
+                type="tel"
+                placeholder="Номер вашего телефона"
+                required
+              />
+              <input
+                class="form-send__input"
+                type="email"
+                placeholder="Адрес вашей электронной почты"
+                required
+              />
+            </div>
+
+            <button class="form-send__btn btn" type="button">Отправить</button>
+
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" required />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text">
+                Нажимая кнопку отправить вы соглашаетесь на обработку ваших
+                данных в соответсвии с
+                <a href="#"> политикой конфиденциальности</a>
+              </span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

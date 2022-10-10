@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- nice-select -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Нержавеющие технологии</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--order">
+  <div class="popup__container">
+    <div class="popup__wrapper">
+      <button class="popup__close" type="button" aria-label="Закрыть">
+        закрыть
+      </button>
+      <div class="popup__inner">
+        <div class="popup__offer">
+          <span class="popup__title">
+            Для того чтобы сделать заказ заполните обязательные поля
+          </span>
+          <div class="popup__text">
+            <p>
+              После полученной от вас информации, <br />
+              наш менеджер свяжется с вами в течении 10 мин, поможет рассчитать
+              заказ и провести оплату
+            </p>
+          </div>
+
+          <form class="popup__form form-submit">
+            <div class="form-send">
+              <input
+                class="form-send__input"
+                type="text"
+                placeholder="Ваше имя"
+                required
+              />
+              <input
+                class="form-send__input"
+                type="tel"
+                placeholder="Номер вашего телефона"
+                required
+              />
+              <input
+                class="form-send__input"
+                type="email"
+                placeholder="Адрес вашей электронной почты"
+                required
+              />
+            </div>
+
+            <button class="form-send__btn btn" type="button">Отправить</button>
+
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" required />
+              <span class="checkbox__box"></span>
+              <span class="checkbox__text">
+                Нажимая кнопку отправить вы соглашаетесь на обработку ваших
+                данных в соответсвии с
+                <a href="#"> политикой конфиденциальности</a>
+              </span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-accordion accordion">
+          <div class="accordion-top">
+            <button class="mobile-menu__link accordion-control" type="button">
+              О компании
+            </button>
+          </div>
+
+          <div class="mobile-menu-accordion__content accordion-content">
+            <ul class="mobile-menu-accordion__list">
+              <li class="mobile-menu-accordion__item">
+                <a class="mobile-menu__link" href="#">О нас</a>
+              </li>
+              <li class="mobile-menu-accordion__item">
+                <a class="mobile-menu__link" href="#">История компании</a>
+              </li>
+              <li class="mobile-menu-accordion__item">
+                <a class="mobile-menu__link" href="#">О нас в цифах</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Продукция</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"
+          ><span>Разрешительные документы</span></a
+        >
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"
+          ><span>Технические условия</span></a
+        >
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Контакты</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__bottom">
+      <a class="btn-path" href=""> <span>Проложить маршрут к офису</span> </a>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <address class="header__address">
+          Московская область, г. Котельники, Дзержинское шоссе, дом 4
+        </address>
+
+        <ul class="header-tools">
+          <li class="header-tools__item">
+            <a class="header-tools__link header-tools__link--at" href="#">
+              nfo@nerzhtech.ru
+            </a>
+          </li>
+          <li class="header-tools__item">
+            <a
+              class="header-tools__link header-tools__link--phone accent"
+              href="#"
+            >
+              +7(495)741- 75-89
+            </a>
+          </li>
+          <li class="header-tools__item">
+            <a class="header-tools__link header-tools__link--schedule">
+              с 8:00 до 17:00
+            </a>
+          </li>
+        </ul>
+
+        <select class="select header__select">
+          <option>Ru</option>
+          <option value="1">US</option>
+          <option value="2">GB</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <nav class="header__inner">
+        <a class="header__logo logo" href="#">
+          <img src="img/logo.png" alt="логотип" />
+        </a>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#">О компании</a>
+
+              <div class="dropmenu dropmenu--left">
+                <!--  -->
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"> О нас</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">История компании</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">О нас в цифах</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Продукция</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Разрешительные документы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Технические условия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="header__btn btn btn-order" type="button">
+          Заказать продукцию
+        </button>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="permits">
+  <div class="section-top" style="background-image: url('img/contacts-bg.jpg')">
+    <div class="container">
+      <div class="section-top__inner">
+        <a class="section-top__back" href="#"><span>Назад</span></a>
+        <h1 class="section-top__title section-title">
+          Разрешительные документы
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="permits__wrapper">
+    <div class="container">
+      <div class="permits__text">
+        <p>
+          Завод Нержавеющие Технологии – это современное предприятие в сегменте
+          изготовления высококачественных труб из нержавеющих сталей и сплавов.
+          Производство оснащено новейшим оборудованием, аттестованное по
+          стандарту НАКС.
+        </p>
+        <p>
+          Основу коллектива завода составляют высококвалифицированные
+          специалисты с многолетним опытом поставок в секторе нефтегазовой,
+          химической, целлюлозно-бумажной, пищевой и атомной промышленности.
+          Взаимодействие с проектными институтами, инжиниринговыми и
+          строительными компаниями для реализации совместных проектов.
+        </p>
+      </div>
+
+      <ul class="permits__list">
+        <li class="permits-item">
+          <div
+            class="permits-item__top"
+            data-fancybox="certificates"
+            data-src="img/certificates/1.jpg"
+          >
+            <img src="img/certificates/1.jpg" alt="документа" />
+          </div>
+
+          <div class="permits-item__body">
+            <span class="permits-item__name">Наименование документа</span>
+            <span class="permits-item__number">№ 123456</span>
+          </div>
+        </li>
+        <li class="permits-item">
+          <div
+            class="permits-item__top"
+            data-fancybox="certificates"
+            data-src="img/certificates/1.jpg"
+          >
+            <img src="img/certificates/1.jpg" alt="документа" />
+          </div>
+
+          <div class="permits-item__body">
+            <span class="permits-item__name">Наименование документа</span>
+            <span class="permits-item__number">№ 123456</span>
+          </div>
+        </li>
+        <li class="permits-item">
+          <div
+            class="permits-item__top"
+            data-fancybox="certificates"
+            data-src="img/certificates/1.jpg"
+          >
+            <img src="img/certificates/1.jpg" alt="документа" />
+          </div>
+
+          <div class="permits-item__body">
+            <span class="permits-item__name">Наименование документа</span>
+            <span class="permits-item__number">№ 123456</span>
+          </div>
+        </li>
+        <li class="permits-item">
+          <div
+            class="permits-item__top"
+            data-fancybox="certificates"
+            data-src="img/certificates/1.jpg"
+          >
+            <img src="img/certificates/1.jpg" alt="документа" />
+          </div>
+
+          <div class="permits-item__body">
+            <span class="permits-item__name">Наименование документа</span>
+            <span class="permits-item__number">№ 123456</span>
+          </div>
+        </li>
+        <li class="permits-item">
+          <div
+            class="permits-item__top"
+            data-fancybox="certificates"
+            data-src="img/certificates/1.jpg"
+          >
+            <img src="img/certificates/1.jpg" alt="документа" />
+          </div>
+
+          <div class="permits-item__body">
+            <span class="permits-item__name">Наименование документа</span>
+            <span class="permits-item__number">№ 123456</span>
+          </div>
+        </li>
+        <li class="permits-item">
+          <div
+            class="permits-item__top"
+            data-fancybox="certificates"
+            data-src="img/certificates/1.jpg"
+          >
+            <img src="img/certificates/1.jpg" alt="документа" />
+          </div>
+
+          <div class="permits-item__body">
+            <span class="permits-item__name">Наименование документа</span>
+            <span class="permits-item__number">№ 123456</span>
+          </div>
+        </li>
+        <li class="permits-item">
+          <div
+            class="permits-item__top"
+            data-fancybox="certificates"
+            data-src="img/certificates/1.jpg"
+          >
+            <img src="img/certificates/1.jpg" alt="документа" />
+          </div>
+
+          <div class="permits-item__body">
+            <span class="permits-item__name">Наименование документа</span>
+            <span class="permits-item__number">№ 123456</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="connect" style="background-image: url('img/connect-bg.jpg')">
+  <div class="container">
+    <div class="connect__wrapper">
+      <div class="connect__offer">
+        <h2 class="connect__title section-title">
+          для того чтобы рассчитать стоимость заказа
+        </h2>
+        <p class="connect__text">
+          Укажите свой номер телефона и мы вам перезвоним в течении 10 мин
+        </p>
+
+        <form class="form-connect">
+          <input
+            class="form-connect__input"
+            type="text"
+            placeholder="Ваш номер телефона"
+          />
+          <button class="form-connect__btn btn btn--dark" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+
+      <div
+        class="connect__preview"
+        style="background-image: url('img/connect-people.png')"
+      ></div>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts">
+  <div class="contacts__wrapper">
+    <div class="contacts__map map">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad4ce32a04ed6cca170a3799d8a43dd45047b08dc8cdd3e77b4c13e8d525dee8f&amp;source=constructor"
+        width="1000"
+        height="720"
+      ></iframe>
+    </div>
+
+    <div class="contacts-box">
+      <div class="contacts-box__top">
+        <h2 class="contacts-box__title section-title">Контакты</h2>
+
+        <ul class="contacts-box__list">
+          <li class="contacts-box__item">
+            <a class="contacts-box__link contacts-box__link--address" href="#">
+              Московская область, г. Котельники, Дзержинское шоссе, дом 4
+            </a>
+          </li>
+          <li class="contacts-box__item">
+            <a class="contacts-box__link contacts-box__link--at" href="#">
+              info@nerzhtech.ru
+            </a>
+          </li>
+          <li class="contacts-box__item">
+            <a class="contacts-box__link contacts-box__link--phone" href="#">
+              +7(495)741- 75-89
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts-requisites">
+        <span>ОГРН: 1127746480410</span>
+        <span>ИНН: 7702792127</span>
+        <span>КПП: 770201001</span>
+      </div>
+      <button class="btn-path" type="button">
+        <span>Проложить маршрут к офису</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__left menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">О компании</a>
+
+            <div class="dropmenu dropmenu--left">
+              <!--  -->
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"> О нас</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">История компании</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">О нас в цифах</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Продукция</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Разрешительные документы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Технические условия</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <div class="footer-contacts">
+          <div class="footer-contacts__row">
+            <a
+              class="footer-contacts__link footer-contacts__link--at"
+              href="mailto:info@nerzhtech.ru"
+              target="_blank"
+            >
+              info@nerzhtech.ru
+            </a>
+            <a
+              class="footer-contacts__link footer-contacts__link--phone accent"
+              href="#"
+              target="_blank"
+            >
+              +7(495)741- 75-89
+            </a>
+          </div>
+          <div class="footer-contacts__row">
+            <a class="footer-contacts__link footer-contacts__link--schedule">
+              с 8:00 до 17:00
+            </a>
+          </div>
+
+          <div class="footer-contacts__row">
+            <a class="footer-contacts__link footer-contacts__link--address">
+              Московская область, г. Котельники, Дзержинское шоссе, дом 4
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__col">
+        <a class="footer__logo logo" href="#">
+          <img src="img/logo.png" alt="логотип" />
+        </a>
+
+        <p class="footer__copy">© 2012 - 2022 OOO “Нержавеющие технологии”</p>
+      </div>
+
+      <form class="footer__form form-subscribe">
+        <span class="form-subscribe__text">
+          Подпишись и следи за событиями компании
+        </span>
+        <div class="form-subscribe__inner">
+          <input
+            class="form-subscribe__input"
+            type="text"
+            placeholder="Введите свой email"
+          />
+          <button class="form-subscribe__btn btn" type="submit">
+            Подписаться
+          </button>
+        </div>
+      </form>
+
+      <div class="footer__copy">
+        <a href="#">Политика конфиденциальности</a>
+
+        <a class="company" href="https://razrabotka-saita.ru/" target="_blank">
+          <span>Разработка сайта</span>
+          <img src="img/logo-company.png" alt="АдвансМедиа" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- wNumb -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"
+  integrity="sha512-igVQ7hyQVijOUlfg3OmcTZLwYJIBXU63xL9RC12xBHNpmGJAktDnzl9Iw0J4yrSaQtDxTTVlwhY730vphoVqJQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- nice-select -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<section class="calc">
+  <div class="container">
+    <h2 class="calc__title section-title">Рассчитать стоимость заказа</h2>
+
+    <form class="calc__form form-calc">
+      <div class="form-calc__top">
+        <div class="range-slider range-slider--diameter">
+          <div class="range-slider__row">
+            <span>Диаметр</span>
+            <input class="range-slider__value" type="text" value="2790" />
+          </div>
+          <div class="range-slider__range"></div>
+          <div class="range-slider__row">
+            <span>377 мм.</span>
+            <span>1920 мм.</span>
+          </div>
+        </div>
+
+        <div class="range-slider range-slider--thickness">
+          <div class="range-slider__row">
+            <span>Толщина стенки</span>
+            <input class="range-slider__value" type="text" value="2790" />
+          </div>
+          <div class="range-slider__range"></div>
+          <div class="range-slider__row">
+            <span>3 мм.</span>
+            <span>25 мм.</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-calc__inner">
+        <div class="form-calc__radio-btns">
+          <label class="radio-btn">
+            <input class="radio-btn__input" type="radio" name="grade" checked />
+            <span class="radio-btn__text"> Обычная сталь </span>
+          </label>
+          <label class="radio-btn">
+            <input class="radio-btn__input" type="radio" name="grade" />
+            <span class="radio-btn__text">
+              Cталь аустенитно-ферритного класса
+            </span>
+          </label>
+          <label class="radio-btn">
+            <input class="radio-btn__input" type="radio" name="grade" />
+            <span class="radio-btn__text">
+              Сталь нержавеющая коррозионно-стойкая
+            </span>
+          </label>
+        </div>
+
+        <div class="form-calc__checkbox-btns">
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 0ЗХ18Н11 </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" checked />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 04Х18Н10 </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 08Х18Н10 </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 08Х18Н12Т </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 08Х18Н12Б </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" checked />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 12Х18Н9 </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 12Х18Н9Т </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 12X18H10T </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 12Х18Н12Т </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 03X17H14M3 </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 08Х18Н12Т </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" checked />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 08Х17Н13М2Т </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 08Х17Н15МЗТ </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 10Х17Н13М2Т </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 20Х23Н13 </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 10Х23Н18 </span>
+          </label>
+          <label class="checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" />
+            <span class="checkbox-btn__box"></span>
+            <span class="checkbox-btn__text"> 20Х23Н18 </span>
+          </label>
+        </div>
+      </div>
+      <div class="form-calc__bottom">
+        <div class="form-calc__left">
+          Данный рассчет является примерным, для более точного рассчета
+          свяжитесь с менеджером компании
+        </div>
+        <div class="form-calc__right">
+          Стоимость заказа составит: <span>1 543 000 ₽</span>
+        </div>
+      </div>
+      <button class="form-calc__btn btn" type="button">
+        Связаться с менеджером
+      </button>
+    </form>
+  </div>
+</section>
