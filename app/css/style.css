@@ -3309,6 +3309,11 @@ body.no-scroll {
   padding-right: 20px;
   font-size: 16px;
 }
+@media (max-width: 1600px) {
+  .dropmenu__link {
+    font-size: 14px;
+  }
+}
 .dropmenu__link::after {
   position: absolute;
   content: "";
