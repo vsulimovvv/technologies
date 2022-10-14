@@ -3791,7 +3791,7 @@ body.no-scroll {
 @media (max-width: 1200px) {
   .permits .permits-item__name {
     font-size: calc(
-        15px + 3 *
+        13px + 5 *
           ((100vw - 400px) / 800)
       );
   }
